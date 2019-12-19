@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <form method="GET" action="first.html" enctype="multipart/form-data">
+        <!-- enctype is needed for file upload -->
+        <p>
+            <input type="text" placeholder="Enter username" name="username">
+        </p>
+        <p>
+            <input type="password" placeholder="Enter password" name="password">
+        </p>
+        <p>
+            <input type="email" name="email" placeholder="Enter email">
+        </p>
+        <p>
+            <input type="number" name="mobile" placeholder="Enter mobile">
+        </p>
+        <p>
+            <input type="date" name="dob" id="">
+        </p>
+        <p>
+            Gender:
+            <input type="radio" name="gender" value="M" checked>Male
+            <input type="radio" name="gender" value="F">Female
+        </p>
+        <p>
+            Country:
+            <select name="country">
+                <option value="IN">India</option>
+                <option value="US" selected>USA</option>
+                <option value="CH">China</option>
+            </select>
+        </p>
+        <p>
+            Preferences
+            <input type="checkbox" name="pref" value="T">Travel
+            <input type="checkbox" name="pref" value="SH">Shopping
+            <input type="checkbox" name="pref" value="SP">Sports
+        </p>
+        <p>
+            Upload photo
+            <input type="file" name="profilepic">
+        </p>
+        <p>
+            PROMO Code
+            <input type="text" name="code" value="QXRTY" readonly>
+        </p>
+        <p>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
